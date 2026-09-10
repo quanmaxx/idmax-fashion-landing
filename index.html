@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDMAX | Thiết Kế Logo & Nhận Diện Thương Hiệu Thời Trang Cao Cấp</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans + Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#110D0B',      // Nâu đen rất đậm (Deep Espresso Black)
+                            dark: '#18120F',       // Nâu đen nền phụ
+                            card: '#211814',       // Khối Card nâu trầm
+                            cardlight: '#2A201A',  // Khối Card sáng hơn khi hover
+                            gold: '#C59B63',       // Vàng nâu sang trọng (Bronze Gold)
+                            goldlight: '#E2C392',  // Vàng nâu sáng ấm
+                            goldwarm: '#987342',   // Vàng đồng đậm
+                            cream: '#F4EFEA',      // Chữ trắng ngà ấm
+                            gray: '#B0A495',       // Chữ xám nâu taupe
+                            graylight: '#D4CDC3'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        editorial: ['Cormorant Garamond', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body class="antialiased selection:bg-brand-gold selection:text-brand-black bg-pattern-grid">
+
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-brand-black/90 backdrop-blur-xl border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <img src="assets/images/brand/idmax-logo.png" alt="IDMAX" class="h-9 w-auto object-contain">
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-xs sm:text-sm tracking-widest uppercase font-semibold text-brand-gray">
+                <a href="#problem" class="hover:text-brand-gold transition-colors">Vì sao cần Logo tốt?</a>
+                <a href="#solution" class="hover:text-brand-gold transition-colors">Giải pháp IDMAX</a>
+                <a href="#projects" class="hover:text-brand-gold transition-colors">Dự án thực tế</a>
+                <a href="#faq" class="hover:text-brand-gold transition-colors">Hỏi đáp</a>
+            </nav>
+            <a href="#contact-form" class="bg-brand-gold text-brand-black px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold tracking-wider uppercase hover:bg-brand-goldlight transition-all transform hover:scale-105 shadow-lg shadow-brand-gold/10">
+                Đăng ký tư vấn
+            </a>
+        </div>
+    </header>
+
+    <!-- 1. HERO SECTION -->
+    <section class="relative min-h-screen pt-36 pb-24 flex items-center justify-center overflow-hidden border-b border-white/10">
+        <div class="absolute inset-0 bg-[url('assets/images/backgrounds/hero-bg.jpg')] bg-cover bg-center opacity-10 mix-blend-luminosity"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-black via-brand-black/90 to-brand-black z-0"></div>
+
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-brand-gold/15 rounded-full blur-[150px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+            <span class="inline-flex items-center gap-2 text-brand-gold text-xs sm:text-sm font-bold tracking-[0.25em] uppercase mb-6 px-5 py-2.5 rounded-full border border-brand-gold/40 bg-brand-gold/10 backdrop-blur-md">
+                <i class="fa-solid fa-gem text-xs"></i> IDMAX Fashion Branding Specialty
+            </span>
+
+            <h1 class="font-sans text-4xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-[0.018em] text-white leading-[1.18] sm:leading-[1.24] mb-8">
+                <span class="block sm:whitespace-nowrap">Thiết Kế Logo Cao Cấp Cho</span>
+                <span class="block text-gold-gradient sm:whitespace-nowrap">Thương Hiệu Thời Trang</span>
+            </h1>
+
+            <p class="text-lg sm:text-2xl text-brand-cream/90 font-normal max-w-3xl mx-auto leading-relaxed mb-10">
+                Logo giúp thương hiệu thời trang tạo <span class="hl-gold">dấu ấn riêng biệt</span>, nâng tầm hình ảnh sang trọng, tạo <span class="hl-white">cảm xúc cuốn hút</span> và được ghi nhớ ngay từ ánh nhìn đầu tiên.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+                <a href="#contact-form" class="w-full sm:w-auto bg-brand-gold text-brand-black px-9 py-4 rounded-full text-sm font-extrabold tracking-wider uppercase hover:bg-brand-goldlight transition-all shadow-xl shadow-brand-gold/20 transform hover:-translate-y-0.5">
+                    Đăng Ký Tư Vấn Định Hướng Miễn Phí
+                </a>
+                <a href="#projects" class="w-full sm:w-auto border border-white/20 text-white px-8 py-4 rounded-full text-sm font-bold tracking-wider uppercase hover:bg-white/10 transition-all backdrop-blur-sm">
+                    Khám Phá Dự Án <i class="fa-solid fa-arrow-down ml-2 text-xs text-brand-gold"></i>
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mt-20 pt-10 border-t border-white/10 text-center bg-glass p-8 sm:p-10 rounded-2xl border-gold-glow w-full">
+                <div>
+                    <p class="font-sans text-3xl sm:text-5xl font-extrabold text-brand-gold">12+ Năm</p>
+                    <p class="text-xs sm:text-sm text-brand-gray tracking-wide font-medium mt-2 leading-relaxed normal-case">Tư vấn chuyên sâu cho nhiều thương hiệu thời trang hàng đầu Việt Nam</p>
+                </div>
+                <div>
+                    <p class="font-sans text-3xl sm:text-5xl font-extrabold text-brand-gold">100%</p>
+                    <p class="text-xs sm:text-sm text-brand-gray tracking-wide font-medium mt-2 leading-relaxed normal-case">Chuẩn ứng dụng in, thêu, dập tag da, bao bì và biển hiệu</p>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <p class="font-sans text-3xl sm:text-5xl font-extrabold text-brand-gold">Độc Bản</p>
+                    <p class="text-xs sm:text-sm text-brand-gray tracking-wide font-medium mt-2 leading-relaxed normal-case">Cam kết độc bản và hỗ trợ bảo hộ bản quyền thương hiệu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. VẤN ĐỀ -->
+    <section id="problem" class="py-28 bg-brand-dark relative border-b border-white/5 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('assets/images/backgrounds/problem-bg.jpg')] bg-cover bg-center opacity-10 mix-blend-luminosity"></div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-sans text-3xl sm:text-5xl font-extrabold uppercase text-white mb-6 tracking-tight leading-tight sm:leading-[1.2]">
+                    Vì Sao Thương Hiệu Thời Trang Cần Một Logo Đủ Tốt Để Bán Hàng Nhiều Hơn?
+                </h2>
+                <p class="text-base sm:text-xl text-brand-gray font-normal leading-relaxed">
+                    Thời trang là sản phẩm mà khi khách hàng khoác lên mình, nó sẽ <span class="hl-white">thể hiện tính cách, địa vị và cái tôi</span> của họ. Họ thông qua thương hiệu để khẳng định giá trị bản thân.
+                </p>
+            </div>
+
+            <!-- Emotional Quote Block -->
+            <div class="bg-gradient-to-r from-brand-card via-brand-cardlight to-brand-card border-l-4 border-brand-gold p-8 sm:p-12 rounded-r-2xl mb-16 shadow-2xl relative">
+                <i class="fa-solid fa-quote-left text-brand-gold/15 text-7xl absolute top-6 right-8"></i>
+                <p class="font-editorial italic text-2xl sm:text-3xl text-brand-goldlight leading-relaxed mb-4">
+                    "Khách hàng mua một sản phẩm thời trang – ngoài chất lượng, độ bền hay sự thoải mái – họ còn thông qua <span class="text-white underline decoration-brand-gold decoration-2">LOGO THƯƠNG HIỆU</span> để cho thế giới thấy bản sắc riêng của mình. Nhưng đa số các thương hiệu vừa và nhỏ chưa làm được điều này vì chưa hiểu hết giá trị của Logo."
+                </p>
+            </div>
+
+            <!-- Grid Pain Points -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-brand-black/90 p-8 rounded-2xl border border-white/10 hover:border-brand-gold/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center mb-6 text-xl"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3 class="font-bold text-lg sm:text-xl text-white mb-3 group-hover:text-brand-gold transition-colors">Sản phẩm tốt, khách vẫn phân vân</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Khách ngần ngại xuống tiền vì <span class="hl-white">logo trên nhãn mác thiếu tinh tế</span>, khiến tổng thể bộ trang phục trông giảm giá trị.</p>
+                </div>
+
+                <div class="bg-brand-black/90 p-8 rounded-2xl border border-white/10 hover:border-brand-gold/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center mb-6 text-xl"><i class="fa-solid fa-ghost"></i></div>
+                    <h3 class="font-bold text-lg sm:text-xl text-white mb-3 group-hover:text-brand-gold transition-colors">Logo mờ nhạt, na ná đối thủ</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Thiếu bản sắc riêng biệt, giống nhiều thương hiệu khác trên thị trường nên <span class="hl-white">không tạo được dấu ấn cá nhân</span>.</p>
+                </div>
+
+                <div class="bg-brand-black/90 p-8 rounded-2xl border border-white/10 hover:border-brand-gold/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center mb-6 text-xl"><i class="fa-solid fa-scissors"></i></div>
+                    <h3 class="font-bold text-lg sm:text-xl text-white mb-3 group-hover:text-brand-gold transition-colors">Bất lực khi sản xuất thực tế</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Logo rườm rà <span class="hl-white">khó ứng dụng lên tag áo, túi giấy, mác dệt</span>, bị vỡ nét khi thêu vi tính hoặc dập kim loại.</p>
+                </div>
+
+                <div class="bg-brand-black/90 p-8 rounded-2xl border border-white/10 hover:border-brand-gold/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center mb-6 text-xl"><i class="fa-solid fa-tag"></i></div>
+                    <h3 class="font-bold text-lg sm:text-xl text-white mb-3 group-hover:text-brand-gold transition-colors">Hình ảnh lệch pha với giá bán</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Bạn muốn bán sản phẩm ở phân khúc cao hơn nhưng <span class="hl-white">nhận diện thương hiệu trông lại quá bình dân</span>.</p>
+                </div>
+
+                <div class="bg-brand-black/90 p-8 rounded-2xl border border-white/10 hover:border-brand-gold/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center mb-6 text-xl"><i class="fa-solid fa-eye-slash"></i></div>
+                    <h3 class="font-bold text-lg sm:text-xl text-white mb-3 group-hover:text-brand-gold transition-colors">Khách mua một lần rồi quên</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Hình ảnh thương hiệu không đủ sức hút cảm xúc để <span class="hl-white">kích thích khách quay lại mua lần sau</span>.</p>
+                </div>
+
+                <div class="bg-brand-black/90 p-8 rounded-2xl border border-white/10 hover:border-brand-gold/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center mb-6 text-xl"><i class="fa-solid fa-arrow-trend-down"></i></div>
+                    <h3 class="font-bold text-lg sm:text-xl text-white mb-3 group-hover:text-brand-gold transition-colors">Cuộc đua hạ giá kiệt sức</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Không xây dựng được giá trị thương hiệu cảm xúc khiến bạn <span class="hl-white">buộc phải cạnh tranh bằng giá rẻ</span>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. KỲ VỌNG -->
+    <section class="py-28 bg-brand-black relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <h2 class="font-sans text-3xl sm:text-5xl font-extrabold uppercase text-white leading-tight sm:leading-[1.2]">
+                        Nếu Có Một Logo Tốt, Thương Hiệu Của Bạn Sẽ Đạt Được Điều Gì?
+                    </h2>
+                    <p class="text-brand-gray text-base sm:text-xl leading-relaxed">
+                        Logo chất lượng giúp thương hiệu nâng cao vị thế, tạo dựng niềm tin vững chắc và tối ưu hiệu quả kinh doanh lâu dài.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start gap-4 p-5 rounded-2xl bg-brand-dark border border-white/10">
+                            <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center shrink-0 mt-0.5"><i class="fa-solid fa-bolt text-sm"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Được nhận ra nhanh hơn</h4>
+                                <p class="text-base text-brand-gray mt-1">Nổi bật ngay tức thì trên mạng xã hội, Lookbook và cửa hàng.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-5 rounded-2xl bg-brand-dark border border-white/10">
+                            <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center shrink-0 mt-0.5"><i class="fa-solid fa-crown text-sm"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Trông chuyên nghiệp & Đáng tin hơn</h4>
+                                <p class="text-base text-brand-gray mt-1">Giúp khách hàng yên tâm khi bỏ ra số tiền lớn mua sản phẩm.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-5 rounded-2xl bg-brand-dark border border-white/10">
+                            <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center shrink-0 mt-0.5"><i class="fa-solid fa-bullseye text-sm"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Thể hiện đúng phân khúc khách hàng</h4>
+                                <p class="text-base text-brand-gray mt-1">Thu hút chính xác nhóm khách hàng sẵn sàng chi trả cho giá trị của bạn.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-5 rounded-2xl bg-brand-dark border border-white/10">
+                            <div class="w-10 h-10 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center shrink-0 mt-0.5"><i class="fa-solid fa-expand text-sm"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Ứng dụng hoàn hảo trên mọi chất liệu</h4>
+                                <p class="text-base text-brand-gray mt-1">Hiển thị sắc nét từ mác dệt lụa, tag giấy, dập da cho tới biển hiệu lớn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="bg-gradient-to-br from-brand-cardlight to-brand-card p-8 sm:p-10 rounded-3xl border border-brand-gold/40 shadow-2xl space-y-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-36 h-36 bg-brand-gold/10 rounded-full blur-3xl"></div>
+
+                        <div class="space-y-3">
+                            <span class="text-xs sm:text-sm text-brand-gold font-bold uppercase tracking-widest block">BẢN SẮC THƯƠNG HIỆU</span>
+                            <p class="font-editorial italic text-2xl sm:text-3xl text-brand-goldlight leading-relaxed">
+                                "Một logo tốt không thay thế chất lượng sản phẩm, nhưng giúp khách hàng cảm nhận đúng hơn về giá trị mà thương hiệu đang có."
+                            </p>
+                        </div>
+
+                        <div class="border-t border-white/10 pt-6 space-y-3">
+                            <span class="text-xs sm:text-sm text-brand-gold font-bold uppercase tracking-widest block">Sức mạnh định hình</span>
+                            <p class="font-editorial italic text-2xl sm:text-3xl text-brand-goldlight leading-relaxed">
+                                "Logo không chỉ đại diện cho thương hiệu. Nó định hình cả nhóm khách hàng và cách thương hiệu được cảm nhận."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. RÀO CẢN THỊ TRƯỜNG -->
+    <section class="py-24 bg-brand-dark border-y border-white/10 relative">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="font-sans text-3xl sm:text-5xl font-extrabold uppercase text-white mb-14 tracking-tight leading-tight sm:leading-[1.2]">
+                Tại Sao Bạn Khó Tìm Nơi Thiết Kế Logo Ứng Ý Cho Thương Hiệu Thời Trang?
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div class="p-8 bg-brand-black rounded-2xl border border-white/10">
+                    <h3 class="text-brand-gold font-bold text-lg sm:text-xl mb-3 flex items-center gap-3">
+                        <i class="fa-solid fa-feather text-base"></i> Ngành đòi hỏi tính cảm xúc trừu tượng
+                    </h3>
+                    <p class="text-base text-brand-gray leading-relaxed">
+                        Thời trang đòi hỏi gu thẩm mỹ rất cao. Các phương pháp thiết kế đồ họa thông thường <span class="hl-white">không thể tạo ra tính cảm xúc và độ tinh tế</span> cần có của một fashion brand.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-brand-black rounded-2xl border border-white/10">
+                    <h3 class="text-brand-gold font-bold text-lg sm:text-xl mb-3 flex items-center gap-3">
+                        <i class="fa-solid fa-shirt text-base"></i> Designer thiếu am hiểu thực tế ngành
+                    </h3>
+                    <p class="text-base text-brand-gray leading-relaxed">
+                        Không có bề dày nghiên cứu đặc thù thời trang nên <span class="hl-white">rất khó bắt nhịp với xu hướng</span> và không lường trước được khả năng ứng dụng thực tế trên chất liệu dệt may.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-brand-black rounded-2xl border border-white/10">
+                    <h3 class="text-brand-gold font-bold text-lg sm:text-xl mb-3 flex items-center gap-3">
+                        <i class="fa-solid fa-copy text-base"></i> Thiếu cá nhân hóa, thiết kế chung chung
+                    </h3>
+                    <p class="text-base text-brand-gray leading-relaxed">
+                        Không biết cách khai thác câu chuyện riêng, dẫn đến <span class="hl-white">sản phẩm ra đời na ná nhau</span>, thiếu bản sắc độc bản cho thương hiệu.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-brand-black rounded-2xl border border-white/10">
+                    <h3 class="text-brand-gold font-bold text-lg sm:text-xl mb-3 flex items-center gap-3">
+                        <i class="fa-solid fa-scale-unbalanced text-base"></i> Không tìm được điểm cân bằng
+                    </h3>
+                    <p class="text-base text-brand-gray leading-relaxed">
+                        Lúng túng trong việc kết hợp các khái niệm cốt lõi, khiến logo hoặc quá phức tạp không dùng được, hoặc quá đơn điệu không có sức hút.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. GIẢI PHÁP IDMAX -->
+    <section id="solution" class="py-28 bg-brand-black relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xl sm:text-3xl font-extrabold text-brand-gold tracking-[0.2em] uppercase mb-5 block">Khác Biệt Từ IDMAX</span>
+                <h2 class="font-sans text-3xl sm:text-5xl font-extrabold uppercase text-white mb-6 tracking-tight leading-tight sm:leading-[1.2]">
+                    Giải Pháp Thiết Kế Logo Thời Trang Chuyên Sâu
+                </h2>
+                <p class="text-brand-gray text-base sm:text-xl">Chúng tôi kết hợp giữa tư duy nghệ thuật thời trang và bài toán kinh doanh thực tế.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-8 sm:p-10 bg-brand-card rounded-3xl border border-white/10 hover:border-brand-gold/50 transition-all group relative overflow-hidden">
+                    <div class="text-brand-gold text-4xl sm:text-5xl font-extrabold mb-6">12+ NĂM</div>
+                    <h3 class="font-bold text-xl sm:text-2xl text-white mb-3 group-hover:text-brand-gold transition-colors">Am Hiểu Sâu Sắc Ngành Thời Trang</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">
+                        Với hơn 12 năm tư vấn & thiết kế cho nhiều chuỗi thời trang hàng đầu Việt Nam, chúng tôi <span class="hl-white">hiểu thị trường, hiểu các vấn đề thực tế</span> và luôn có giải pháp tối ưu nhất cho bạn.
+                    </p>
+                </div>
+
+                <div class="p-8 sm:p-10 bg-brand-card rounded-3xl border border-white/10 hover:border-brand-gold/50 transition-all group relative overflow-hidden">
+                    <div class="text-brand-gold text-4xl sm:text-5xl font-extrabold mb-6">ĐỘC QUYỀN</div>
+                    <h3 class="font-bold text-xl sm:text-2xl text-white mb-3 group-hover:text-brand-gold transition-colors">Bảo Hộ Sở Hữu Trí Tuệ</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">
+                        Trong trường hợp tên thương hiệu có khả năng bảo hộ, IDMAX thiết kế Logo khsc biệt,  độc quyền cho bạn để có thể bảo hộ thương hiệu tổng thể hoàn chỉnh.
+                    </p>
+                </div>
+
+                <div class="p-8 sm:p-10 bg-brand-card rounded-3xl border border-white/10 hover:border-brand-gold/50 transition-all group relative overflow-hidden">
+                    <div class="text-brand-gold text-4xl sm:text-5xl font-extrabold mb-6">ỨNG DỤNG</div>
+                    <h3 class="font-bold text-xl sm:text-2xl text-white mb-3 group-hover:text-brand-gold transition-colors">Tối Ưu Sản Xuất Thực Tế</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">
+                        Logo kiểm thử chuẩn xác khi <span class="hl-white">in ấn, thêu vi tính, dập tag da, cắt chữ kim loại</span> hay thi công bảng hiệu cửa hàng.
+                    </p>
+                </div>
+
+                <div class="p-8 sm:p-10 bg-brand-card rounded-3xl border border-white/10 hover:border-brand-gold/50 transition-all group relative overflow-hidden">
+                    <div class="text-brand-gold text-4xl sm:text-5xl font-extrabold mb-6">CHUẨN DNA</div>
+                    <h3 class="font-bold text-xl sm:text-2xl text-white mb-3 group-hover:text-brand-gold transition-colors">May Đo Theo Đúng Định Hướng</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">
+                        Thiết kế phù hợp chính xác với <span class="hl-white">phân khúc giá, tệp khách hàng, cá tính thương hiệu</span> và tầm nhìn phát triển lâu dài.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. DỰ ÁN TIÊU BIỂU (UPDATED BIGGER IMAGES + INTERACTIVE GALLERY MODAL) -->
+    <section id="projects" class="py-28 bg-brand-dark border-t border-white/10 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <h2 class="font-sans text-3xl sm:text-5xl font-extrabold uppercase text-white tracking-tight leading-tight sm:leading-[1.2]">
+                        Dự Án Tiêu Biểu Bởi IDMAX
+                    </h2>
+                </div>
+                <p class="text-brand-gray text-base max-w-md mt-4 md:mt-0 leading-relaxed">
+                    Click vào bất kỳ dự án nào để khám phá trọn bộ hình ảnh thực tế.
+                </p>
+            </div>
+
+            <!-- Grid Brands with Larger Heights & Interactive Trigger -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Brand 1: BILLUXURY -->
+                <div onclick="openProjectGallery(0)" class="bg-brand-black rounded-3xl overflow-hidden border border-white/10 hover:border-brand-gold/80 transition-all duration-300 group cursor-pointer shadow-2xl hover:-translate-y-1.5">
+                    <div class="aspect-[3/2] bg-zinc-900 relative overflow-hidden flex items-center justify-center p-8">
+                        <img src="assets/images/projects/billuxury/card.jpg" alt="BILLUXURY" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/30 to-transparent"></div>
+
+                        <!-- Hover Overlay Button -->
+                        <div class="absolute inset-0 bg-brand-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-brand-gold text-brand-black px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                                <i class="fa-solid fa-expand"></i> Xem Chi Tiết Bộ Nhận Diện
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-brand-gold font-bold uppercase tracking-wider">Thời Trang Nam Cao Cấp</span>
+                            <span class="text-xs text-brand-gray"><i class="fa-solid fa-images mr-1"></i> 4 Hình ảnh</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">BILLUXURY</h3>
+                        <p class="text-base text-brand-gray leading-relaxed mb-4 line-clamp-2">Tái định vị logo phong cách tối giản, sang trọng trên toàn bộ hệ thống nhãn mác & cửa hàng toàn quốc.</p>
+                    </div>
+                </div>
+
+                <!-- Brand 2: HAT+ -->
+                <div onclick="openProjectGallery(1)" class="bg-brand-black rounded-3xl overflow-hidden border border-white/10 hover:border-brand-gold/80 transition-all duration-300 group cursor-pointer shadow-2xl hover:-translate-y-1.5">
+                    <div class="aspect-[3/2] bg-zinc-900 relative overflow-hidden flex items-center justify-center p-8">
+                        <img src="assets/images/projects/hat/card.jpg" alt="HAT+" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/30 to-transparent"></div>
+
+                        <div class="absolute inset-0 bg-brand-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-brand-gold text-brand-black px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                                <i class="fa-solid fa-expand"></i> Xem Chi Tiết Bộ Nhận Diện
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-brand-gold font-bold uppercase tracking-wider">Chuỗi Phụ Kiện Thời Trang</span>
+                            <span class="text-xs text-brand-gray"><i class="fa-solid fa-images mr-1"></i> 4 Hình ảnh</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">HAT+</h3>
+                        <p class="text-base text-brand-gray leading-relaxed mb-4 line-clamp-2">Biểu tượng hiện đại, chuẩn hóa tuyệt đối khi thêu vi tính và dập đinh kim loại trên nón mũ thời trang.</p>
+                    </div>
+                </div>
+
+                <!-- Brand 3: BADASS -->
+                <div onclick="openProjectGallery(2)" class="bg-brand-black rounded-3xl overflow-hidden border border-white/10 hover:border-brand-gold/80 transition-all duration-300 group cursor-pointer shadow-2xl hover:-translate-y-1.5">
+                    <div class="aspect-[3/2] bg-zinc-900 relative overflow-hidden flex items-center justify-center p-8">
+                        <img src="assets/images/projects/badass/card.jpg" alt="BADASS" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/30 to-transparent"></div>
+
+                        <div class="absolute inset-0 bg-brand-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-brand-gold text-brand-black px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                                <i class="fa-solid fa-expand"></i> Xem Chi Tiết Bộ Nhận Diện
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-brand-gold font-bold uppercase tracking-wider">Local Brand Streetwear</span>
+                            <span class="text-xs text-brand-gray"><i class="fa-solid fa-images mr-1"></i> 4 Hình ảnh</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">BADASS</h3>
+                        <p class="text-base text-brand-gray leading-relaxed mb-4 line-clamp-2">Thiết kế góc cạnh, đậm cái tôi cá tính, thu hút tệp khách hàng Gen Z năng động ngay lập tức.</p>
+                    </div>
+                </div>
+
+                <!-- Brand 4: BESKARMAN -->
+                <div onclick="openProjectGallery(3)" class="bg-brand-black rounded-3xl overflow-hidden border border-white/10 hover:border-brand-gold/80 transition-all duration-300 group cursor-pointer shadow-2xl hover:-translate-y-1.5">
+                    <div class="aspect-[3/2] bg-zinc-900 relative overflow-hidden flex items-center justify-center p-8">
+                        <img src="assets/images/projects/beskarman/card.jpg" alt="BESKARMAN" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/30 to-transparent"></div>
+
+                        <div class="absolute inset-0 bg-brand-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-brand-gold text-brand-black px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                                <i class="fa-solid fa-expand"></i> Xem Chi Tiết Bộ Nhận Diện
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-brand-gold font-bold uppercase tracking-wider">Menswear May Đo</span>
+                            <span class="text-xs text-brand-gray"><i class="fa-solid fa-images mr-1"></i> 4 Hình ảnh</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">BESKARMAN</h3>
+                        <p class="text-base text-brand-gray leading-relaxed mb-4 line-clamp-2">Phong cách cổ điển kết hợp tối giản, dập nổi uy quyền trên tag da cao cấp và bao bì veston sang trọng.</p>
+                    </div>
+                </div>
+
+                <!-- Brand 5: TEZO & MELIA -->
+                <div onclick="openProjectGallery(4)" class="bg-brand-black rounded-3xl overflow-hidden border border-white/10 hover:border-brand-gold/80 transition-all duration-300 group cursor-pointer shadow-2xl hover:-translate-y-1.5">
+                    <div class="aspect-[3/2] bg-zinc-900 relative overflow-hidden flex items-center justify-center p-8">
+                        <img src="assets/images/projects/tezo/card.jpg" alt="TEZO" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/30 to-transparent"></div>
+
+                        <div class="absolute inset-0 bg-brand-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-brand-gold text-brand-black px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                                <i class="fa-solid fa-expand"></i> Xem Chi Tiết Bộ Nhận Diện
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-brand-gold font-bold uppercase tracking-wider">Thời Trang Công Sở</span>
+                            <span class="text-xs text-brand-gray"><i class="fa-solid fa-images mr-1"></i> 4 Hình ảnh</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">TEZO & MELIA</h3>
+                        <p class="text-base text-brand-gray leading-relaxed mb-4 line-clamp-2">Hệ thống nhận diện ứng dụng thanh lịch, nhất quán trên hàng chục điểm bán showroom toàn quốc.</p>
+                    </div>
+                </div>
+
+                <!-- Brand 6: BARITTA -->
+                <div onclick="openProjectGallery(5)" class="bg-brand-black rounded-3xl overflow-hidden border border-white/10 hover:border-brand-gold/80 transition-all duration-300 group cursor-pointer shadow-2xl hover:-translate-y-1.5">
+                    <div class="aspect-[3/2] bg-zinc-900 relative overflow-hidden flex items-center justify-center p-8">
+                        <img src="assets/images/projects/baritta/card.jpg" alt="BARITTA" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/30 to-transparent"></div>
+
+                        <div class="absolute inset-0 bg-brand-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-brand-gold text-brand-black px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest flex items-center gap-2 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                                <i class="fa-solid fa-expand"></i> Xem Chi Tiết Bộ Nhận Diện
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs text-brand-gold font-bold uppercase tracking-wider">Thời Trang Thiết Kế Nữ</span>
+                            <span class="text-xs text-brand-gray"><i class="fa-solid fa-images mr-1"></i> 4 Hình ảnh</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">BARITTA</h3>
+                        <p class="text-base text-brand-gray leading-relaxed mb-4 line-clamp-2">Logo biểu tượng độc đáo, quyến rũ, tôn vinh nét đẹp tinh tế của dòng thời trang thiết kế nữ cao cấp.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. BẠN SẼ NHẬN ĐƯỢC GÌ -->
+    <section class="py-28 bg-brand-black relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-6xl mx-auto mb-16">
+                <span class="text-xl sm:text-2xl font-extrabold text-brand-gold tracking-[0.2em] uppercase mb-5 block">Cam Kết Bàn Giao</span>
+                <h2 class="font-sans text-3xl sm:text-5xl font-extrabold uppercase text-white mb-6 tracking-tight leading-tight sm:leading-[1.2] sm:whitespace-nowrap">
+                    Bạn Sẽ Nhận Được Gì Từ IDMAX?
+                </h2>
+                <p class="text-brand-gray text-base sm:text-xl">Trọn bộ giải pháp chuẩn hóa sẵn sàng cho vận hành và sản xuất.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-8 bg-brand-card rounded-2xl border border-white/10">
+                    <i class="fa-solid fa-shapes text-3xl text-brand-gold mb-4"></i>
+                    <h3 class="font-bold text-white text-xl mb-2">Đa dạng phương án lựa chọn</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Nhiều góc nhìn và tư duy thẩm mỹ khác nhau để bạn chọn ra phương án hoàn hảo nhất.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card rounded-2xl border border-white/10">
+                    <i class="fa-solid fa-comments text-3xl text-brand-gold mb-4"></i>
+                    <h3 class="font-bold text-white text-xl mb-2">Tư vấn định hướng miễn phí</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Được chuyên gia tư vấn chiến lược hình ảnh thương hiệu trước khi triển khai.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card rounded-2xl border border-white/10">
+                    <i class="fa-solid fa-box-archive text-3xl text-brand-gold mb-4"></i>
+                    <h3 class="font-bold text-white text-xl mb-2">Phương án logo hoàn thiện</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Giao đầy đủ phiên bản màu sắc, tỷ lệ chuẩn và file gốc Vector sẵn sàng cho xưởng in.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card rounded-2xl border border-white/10">
+                    <i class="fa-solid fa-shield-cat text-3xl text-brand-gold mb-4"></i>
+                    <h3 class="font-bold text-white text-xl mb-2">Khả năng độc quyền cao</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Logo độc bản, đáp ứng khả năng đăng ký bảo hộ sở hữu trí tuệ thương hiệu.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card rounded-2xl border border-white/10">
+                    <i class="fa-solid fa-book text-3xl text-brand-gold mb-4"></i>
+                    <h3 class="font-bold text-white text-xl mb-2">Hướng dẫn sử dụng chi tiết</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Thông số màu sắc, quy cách, kích thước và tỷ lệ hiển thị của logo.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card rounded-2xl border border-white/10">
+                    <i class="fa-solid fa-handshake-angle text-3xl text-brand-gold mb-4"></i>
+                    <h3 class="font-bold text-white text-xl mb-2">Đồng hành hỗ trợ</h3>
+                    <p class="text-base text-brand-gray leading-relaxed">Đồng hành cùng thương hiệu trong quá trình xây dựng và phát triển hình ảnh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. CÂU HỎI THƯỜNG GẶP -->
+    <section id="faq" class="py-28 bg-brand-dark border-t border-white/10">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-sans text-3xl sm:text-5xl font-extrabold uppercase text-white tracking-tight leading-tight sm:leading-[1.2]">Câu Hỏi Thường Gặp</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-brand-black border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left font-bold text-white flex justify-between items-center focus:outline-none faq-btn">
+                        <span class="text-base sm:text-xl">Tôi được xem bao nhiêu phương án thiết kế?</span>
+                        <i class="fa-solid fa-plus text-brand-gold text-lg transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-base sm:text-lg text-brand-gray hidden leading-relaxed">
+                        Tùy thuộc vào gói dịch vụ, IDMAX sẽ gửi từ 4 đến 7 phương án thiết kế độc lập với tư duy và góc nhìn thẩm mỹ riêng biệt để bạn lựa chọn.
+                    </div>
+                </div>
+
+                <div class="bg-brand-black border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left font-bold text-white flex justify-between items-center focus:outline-none faq-btn">
+                        <span class="text-base sm:text-xl">Mức giá thiết kế logo là bao nhiêu?</span>
+                        <i class="fa-solid fa-plus text-brand-gold text-lg transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-base sm:text-lg text-brand-gray hidden leading-relaxed">
+                        IDMAX cung cấp mức giá thiết kế linh hoạt và cá nhân hóaphù hợp cho từng quy mô: từ Local Brand khởi nghiệp cho đến các Chuỗi thương hiệu thời trang lớn.
+                    </div>
+                </div>
+
+                <div class="bg-brand-black border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left font-bold text-white flex justify-between items-center focus:outline-none faq-btn">
+                        <span class="text-base sm:text-xl">Có bao nhiêu vòng chỉnh sửa?</span>
+                        <i class="fa-solid fa-plus text-brand-gold text-lg transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-base sm:text-lg text-brand-gray hidden leading-relaxed">
+                        IDMAX hỗ trợ chỉnh sửa chỉn chu phương án cho đến khi hoàn toàn hài lòng về phương án thiết kế và hoàn thiện.
+                    </div>
+                </div>
+
+                <div class="bg-brand-black border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left font-bold text-white flex justify-between items-center focus:outline-none faq-btn">
+                        <span class="text-base sm:text-xl">Thời gian thực hiện mất bao lâu?</span>
+                        <i class="fa-solid fa-plus text-brand-gold text-lg transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-base sm:text-lg text-brand-gray hidden leading-relaxed">
+                        Thời gian hoàn thiện trung bình từ 5 – 10 ngày làm việc (bao gồm bước nghiên cứu, phác thảo và dựng bài trình diễn mockup thực tế).
+                    </div>
+                </div>
+
+                <div class="bg-brand-black border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left font-bold text-white flex justify-between items-center focus:outline-none faq-btn">
+                        <span class="text-base sm:text-xl">Tôi nhận được những file gì khi bàn giao?</span>
+                        <i class="fa-solid fa-plus text-brand-gold text-lg transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-base sm:text-lg text-brand-gray hidden leading-relaxed">
+                        Bạn nhận đầy đủ bộ File gốc Vector (AI, EPS, PDF), File ảnh sắc nét (PNG tách nền, JPG) và File Brand Guidelines quy chuẩn.
+                    </div>
+                </div>
+
+                <div class="bg-brand-black border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left font-bold text-white flex justify-between items-center focus:outline-none faq-btn">
+                        <span class="text-base sm:text-xl">Làm sao để biết thương hiệu của tôi có khả năng bảo hộ không?</span>
+                        <i class="fa-solid fa-plus text-brand-gold text-lg transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-base sm:text-lg text-brand-gray hidden leading-relaxed">
+                        IDMAX sẽ hỗ trợ bạn tra cứu và thẩm định khả năng bảo hộ TÊN THƯƠNG HIỆU trước khi bắt đầu triển khai phần thiết kế Logo để đảm bảo thương hiệu của bạn luôn an toàn và được bảo hộ độc quyền
+                    </div>
+                </div>
+
+                <div class="bg-brand-black border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="w-full p-6 text-left font-bold text-white flex justify-between items-center focus:outline-none faq-btn">
+                        <span class="text-base sm:text-xl">Nếu đã có logo nhưng muốn làm mới (Rebranding) thì sao?</span>
+                        <i class="fa-solid fa-plus text-brand-gold text-lg transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-base sm:text-lg text-brand-gray hidden leading-relaxed">
+                        IDMAX sẽ phân tích di sản cốt lõi của thương hiệu hiện tại và tiến hành nâng cấp tinh chỉnh theo ngôn ngữ thời trang hiện đại hơn.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FORM ĐĂNG KÝ -->
+    <section id="contact-form" class="py-28 bg-brand-black relative">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-gradient-to-b from-brand-cardlight to-brand-card border border-brand-gold/40 p-8 sm:p-14 rounded-3xl shadow-2xl relative overflow-hidden border-gold-glow">
+                <div class="absolute top-0 right-0 w-72 h-72 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs sm:text-sm font-bold text-brand-gold tracking-[0.25em] uppercase mb-3 block">Đồng Hành Cùng IDMAX</span>
+                    <h2 class="font-sans text-3xl sm:text-4xl font-extrabold uppercase text-white mb-4 tracking-tight leading-tight sm:leading-[1.2]">
+                        Hãy Cho Chúng Tôi Biết Thêm Về Thương Hiệu Của Bạn
+                    </h2>
+                    <p class="text-base text-brand-gray">
+                        Sau khi nhận thông tin, IDMAX sẽ liên hệ trực tiếp để trao đổi rõ hơn và đề xuất hướng triển khai phù hợp nhất trước khi báo giá.
+                    </p>
+                </div>
+
+                <form id="consultation-form" data-lead-form class="space-y-6" method="post" target="lead-response-frame">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-brand-cream uppercase tracking-wider mb-2">Họ và tên *</label>
+                            <input type="text" name="full_name" autocomplete="name" required placeholder="Nguyễn Văn A" class="w-full bg-brand-black/90 border border-white/15 rounded-xl px-4 py-3.5 text-base text-white focus:outline-none focus:border-brand-gold transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-brand-cream uppercase tracking-wider mb-2">Số điện thoại / Zalo *</label>
+                            <input type="tel" name="phone" autocomplete="tel" required placeholder="0901 234 567" class="w-full bg-brand-black/90 border border-white/15 rounded-xl px-4 py-3.5 text-base text-white focus:outline-none focus:border-brand-gold transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-brand-cream uppercase tracking-wider mb-2">Tên thương hiệu (hoặc tên dự kiến)</label>
+                            <input type="text" name="brand_name" placeholder="Ví dụ: LIBÉ, Bad Habits..." class="w-full bg-brand-black/90 border border-white/15 rounded-xl px-4 py-3.5 text-base text-white focus:outline-none focus:border-brand-gold transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-brand-cream uppercase tracking-wider mb-2">Giai đoạn thương hiệu</label>
+                            <select name="brand_stage" class="w-full bg-brand-black/90 border border-white/15 rounded-xl px-4 py-3.5 text-base text-white focus:outline-none focus:border-brand-gold transition-colors">
+                                <option>Đang chuẩn bị ra mắt</option>
+                                <option>Đã và đang kinh doanh</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-brand-cream uppercase tracking-wider mb-2">Tình trạng Logo hiện tại</label>
+                            <select name="logo_status" class="w-full bg-brand-black/90 border border-white/15 rounded-xl px-4 py-3.5 text-base text-white focus:outline-none focus:border-brand-gold transition-colors">
+                                <option>Chưa có logo</option>
+                                <option>Đã có logo - Muốn làm mới hoàn toàn</option>
+                                <option>Đã có logo - Muốn nâng cấp tinh chỉnh</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-brand-cream uppercase tracking-wider mb-2">Tình trạng bảo hộ thương hiệu</label>
+                            <select name="protection_status" class="w-full bg-brand-black/90 border border-white/15 rounded-xl px-4 py-3.5 text-base text-white focus:outline-none focus:border-brand-gold transition-colors">
+                                <option>Chưa đăng ký bảo hộ</option>
+                                <option>Đã đăng ký bảo hộ</option>
+                                <option>Cần IDMAX tư vấn bảo hộ</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-brand-cream uppercase tracking-wider mb-2">Điều gì khiến bạn muốn thiết kế mới hoặc làm lại logo?</label>
+                        <textarea name="needs" rows="3" placeholder="Chia sẻ thêm về định hướng phong cách bạn mong muốn..." class="w-full bg-brand-black/90 border border-white/15 rounded-xl px-4 py-3.5 text-base text-white focus:outline-none focus:border-brand-gold transition-colors"></textarea>
+                    </div>
+
+                    <div class="absolute -left-[9999px] top-auto w-px h-px overflow-hidden" aria-hidden="true">
+                        <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                    </div>
+
+                    <input type="hidden" name="utm_source">
+                    <input type="hidden" name="utm_medium">
+                    <input type="hidden" name="utm_campaign">
+                    <input type="hidden" name="utm_content">
+                    <input type="hidden" name="utm_term">
+                    <input type="hidden" name="fbclid">
+                    <input type="hidden" name="gclid">
+                    <input type="hidden" name="landing_page">
+                    <input type="hidden" name="referrer">
+                    <input type="hidden" name="user_agent">
+
+                    <label class="flex items-start gap-3 text-sm text-brand-gray leading-relaxed cursor-pointer">
+                        <input type="checkbox" name="consent" value="yes" required class="mt-1 accent-brand-gold">
+                        <span>Tôi đồng ý để IDMAX liên hệ tư vấn dựa trên thông tin đã cung cấp.</span>
+                    </label>
+
+                    <button type="submit" class="w-full bg-brand-gold text-brand-black font-extrabold py-4 rounded-xl text-sm sm:text-base tracking-wider uppercase hover:bg-brand-goldlight transition-all shadow-xl shadow-brand-gold/20 transform hover:-translate-y-0.5">
+                        Gửi Thông Tin - Nhận Tư Vấn Đề Xuất Phù Hợp
+                    </button>
+                    <p id="form-status" class="hidden text-center text-sm leading-relaxed" role="status" aria-live="polite"></p>
+                </form>
+                <iframe name="lead-response-frame" id="lead-response-frame" class="hidden" title="Kết quả gửi biểu mẫu"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 bg-brand-black border-t border-white/10 text-center text-sm text-brand-gray">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+                <img src="assets/images/brand/idmax-logo.png" alt="IDMAX" class="h-9 w-auto object-contain mx-auto">
+            </div>
+            <p>© 2026 IDMAX Branding Agency. Chuyên gia tư vấn & thiết kế logo thời trang.</p>
+            <div class="flex gap-4 text-brand-cream/80 text-base">
+                <a href="https://www.facebook.com/idmaxbranding" target="_blank" rel="noreferrer" class="hover:text-brand-gold" aria-label="Facebook IDMAX"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ==========================================
+         10. PROJECT GALLERY MODAL (LUXURY POPUP)
+         ========================================== -->
+    <div id="project-modal" class="fixed inset-0 z-50 bg-brand-black/95 backdrop-blur-2xl hidden flex items-center justify-center p-4 sm:p-6 md:p-10 transition-all duration-300">
+        <!-- Close Button -->
+        <button onclick="closeProjectGallery()" class="absolute top-6 right-6 z-50 w-12 h-12 rounded-full bg-brand-card border border-white/20 text-white hover:text-brand-gold hover:border-brand-gold flex items-center justify-center text-2xl transition-all shadow-xl">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Modal Container -->
+        <div class="max-w-6xl w-full max-h-[90vh] bg-brand-card border border-brand-gold/40 rounded-3xl overflow-hidden relative shadow-2xl flex flex-col lg:flex-row my-auto">
+
+            <!-- Left: Main Image Showcase & Thumbnails -->
+            <div class="lg:w-7/12 bg-black/60 p-6 sm:p-8 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-white/10">
+                <!-- Large Display Image -->
+                <div class="relative w-full h-[320px] sm:h-[420px] rounded-2xl overflow-hidden bg-zinc-900 border border-white/10 group mb-4">
+                    <img id="gallery-main-img" src="" alt="Project Showcase" class="w-full h-full object-cover transition-all duration-500">
+                    <span id="gallery-img-counter" class="absolute bottom-4 right-4 bg-brand-black/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-brand-gold border border-brand-gold/30">1 / 4</span>
+                </div>
+
+                <!-- Thumbnails Bar -->
+                <div id="gallery-thumbnails" class="flex gap-3 overflow-x-auto pb-2 no-scrollbar">
+                    <!-- Dynamic Thumbnails inserted via JS -->
+                </div>
+            </div>
+
+            <!-- Right: Detailed Brand Information -->
+            <div class="lg:w-5/12 p-6 sm:p-10 flex flex-col justify-between overflow-y-auto max-h-[500px] lg:max-h-none">
+                <div class="space-y-6">
+                    <div>
+                        <span id="modal-category" class="text-xs font-bold text-brand-gold tracking-[0.2em] uppercase block mb-1">Dịch Vụ Nổi Bật</span>
+                        <h3 id="modal-title" class="font-sans text-3xl font-extrabold uppercase text-white tracking-tight">BRAND NAME</h3>
+                    </div>
+
+                    <div class="space-y-3 border-t border-white/10 pt-4">
+                        <h4 class="text-xs font-bold text-brand-goldlight uppercase tracking-widest">Đặc tính thiết kế & Ứng dụng thực tế:</h4>
+                        <p id="modal-description" class="text-base text-brand-gray leading-relaxed">Mô tả dự án...</p>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div id="modal-highlights" class="space-y-2 border-t border-white/10 pt-4">
+                        <!-- Dynamic Highlights via JS -->
+                    </div>
+
+                </div>
+
+                <!-- Footer Nav inside Modal -->
+                <div class="pt-8 mt-6 border-t border-white/10 flex items-center justify-between">
+                    <button onclick="prevProject()" class="text-xs text-brand-gray hover:text-brand-gold uppercase tracking-wider font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-arrow-left"></i> Dự án trước
+                    </button>
+                    <a href="#contact-form" onclick="closeProjectGallery()" class="bg-brand-gold text-brand-black px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-brand-goldlight transition-all">
+                        Tư vấn giống dự án này
+                    </a>
+                    <button onclick="nextProject()" class="text-xs text-brand-gray hover:text-brand-gold uppercase tracking-wider font-bold flex items-center gap-2">
+                        Dự án sau <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/data/projects.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/marketing-config.js"></script>
+    <script src="assets/js/lead-form.js"></script>
+</body>
+</html>
