@@ -1,0 +1,95 @@
+body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #110D0B;
+            color: #F4EFEA;
+            overflow-x: hidden;
+        }
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #F4EFEA 0%, #E2C392 40%, #C59B63 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .border-gold-glow {
+            border: 1px solid rgba(197, 155, 99, 0.3);
+            box-shadow: 0 0 35px rgba(197, 155, 99, 0.1);
+        }
+        .bg-glass {
+            background: rgba(24, 18, 15, 0.85);
+            backdrop-filter: blur(16px);
+        }
+        .hl-gold {
+            color: #E2C392;
+            font-weight: 600;
+        }
+        .hl-white {
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+        /* Grid Overlay chìm */
+        .bg-pattern-grid {
+            background-image: linear-gradient(to right, rgba(197, 155, 99, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(197, 155, 99, 0.05) 1px, transparent 1px);
+            background-size: 48px 48px;
+        }
+        /* Hide scrollbar for gallery thumbnails */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Readability refinements */
+        body > section h1,
+        body > section h2 {
+            line-height: 1.24 !important;
+            letter-spacing: 0.012em !important;
+        }
+
+        body > section h1 {
+            line-height: 1.2 !important;
+            letter-spacing: 0.018em !important;
+        }
+
+        #problem .grid > div h3 {
+            color: #E2C392 !important;
+            font-size: 1.28rem !important;
+            line-height: 1.42 !important;
+            letter-spacing: 0.025em !important;
+            text-transform: uppercase;
+            font-weight: 800 !important;
+        }
+
+        #problem .grid > div p,
+        #solution .grid > div p,
+        #projects .grid > div p,
+        body > section:not(#contact-form) .grid > div p.text-brand-gray {
+            font-size: 1.2rem !important;
+            line-height: 1.72 !important;
+        }
+
+        @media (min-width: 768px) {
+            body > section h1 {
+                line-height: 1.24 !important;
+            }
+        }
+
+        @media (max-width: 640px) {
+            body > section h1,
+            body > section h2 {
+                line-height: 1.28 !important;
+                letter-spacing: 0.008em !important;
+            }
+
+            #problem .grid > div h3 {
+                font-size: 1.16rem !important;
+            }
+
+            #problem .grid > div p,
+            #solution .grid > div p,
+            #projects .grid > div p,
+            body > section:not(#contact-form) .grid > div p.text-brand-gray {
+                font-size: 1.08rem !important;
+            }
+        }
