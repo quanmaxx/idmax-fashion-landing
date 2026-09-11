@@ -63,7 +63,7 @@
             const thumbContainer = document.getElementById('gallery-thumbnails');
             thumbContainer.innerHTML = project.images.map((img, idx) => `
                 <button onclick="setMainImage('${img}', ${idx})" class="w-28 aspect-[3/2] rounded-xl overflow-hidden border border-white/20 shrink-0 opacity-50 hover:opacity-100 transition-all">
-                    <img src="${img}" class="w-full h-full object-cover">
+                    <img src="${img}" alt="Ảnh ${idx + 1} của ${project.title}" class="w-full h-full object-contain bg-black/30">
                 </button>
             `).join('');
 
